@@ -1,30 +1,17 @@
 import "./CenterHeader.css";
-// import { linksNav } from "../../Data/Data";
 
-// const NavCenterHeader = (links) => {
-//   return `
-//     <nav class="centerHeader">
-//         <ul>
-//             ${links
-//               .map(
-//                 (link) => `
-//             <li>
-//                 <a href=${link.link} id=${link.id}>${link.name}</a>
-//             </li>
-//             `
-//               )
-//               .join("")}
-//         </ul>
-//     </nav>
-//     `;
-// };
-
-const NavCenterHeader = () => {
+const NavCenterHeader = (links) => {
     return `
-    <p>Home</p>
-    <p>BookClub</p>
-    <p>About</p>
-    `
-}
+    <nav>
+        <ul>
+            ${links.map((links) => `
+                <li>
+                    <a href=${link.link} id=${link.id}>${link.name}</a>
+                </li>
+            `).join("")}
+        </ul>
+    </nav>
+    `;
+};
 
 export default NavCenterHeader;

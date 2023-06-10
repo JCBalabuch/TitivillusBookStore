@@ -1,6 +1,6 @@
 import "./leftHeader.css";
 
-const leftHeader = () => {
+const LeftHeader = () => {
   return `
     <div class = "leftHeader">
     <img src="./assets/TitivillusSI.jpg" alt="Titivillus BookStore Logo">
@@ -9,4 +9,4 @@ const leftHeader = () => {
    `;
 };
 
-export default leftHeader;
+export default LeftHeader;
