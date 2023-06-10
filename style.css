@@ -18,4 +18,6 @@
 body {
   background-color: var(--ttv-color-dark);
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  color: var(--ttv-color-light);
+  width: 100%;
 }

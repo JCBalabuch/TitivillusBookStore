@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border: 2px solid red;
 }
 
 .leftHeader > h2 {

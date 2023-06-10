@@ -6,6 +6,7 @@ const TemplateAbout = () => {
     return `
         <div class = "about">
             <img src="./assets/TitivillusBI.jpg" alt="Logo Titivillus BookStore">
+            <h2>About us</h2>
             <p>${aboutDescription}</p>
         </div>
     `

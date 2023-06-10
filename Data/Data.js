@@ -311,30 +311,30 @@ export const dataBooks = [
 ];
 
 export const linksNav = [
-  { name: "Home", link: "#", id: homeLink },
-  { name: "BookClub", link: "#BookClub", id: bookClubLink },
-  { name: "About", link: "#About", id: aboutLink },
+  { name: "Home", link: "#", id: "homeLink" },
+  { name: "BookClub", link: "#BookClub", id: "bookClubLink" },
+  { name: "About", link: "#About", id: "aboutLink" },
 ];
 
 export const slogan =
-  "Bienvenido a Titivillus, la biblioteca que te transportará a mundos imaginarios y te hará vivir aventuras inolvidables a través de las páginas de sus libros.";
+  "Bienvenido a <span>Titivillus</span> BookStore, la biblioteca que te transportará a mundos imaginarios y te hará vivir aventuras inolvidables a través de las páginas de sus libros.";
 
-export const aboutDescription = `Bienvenido a Titivillus, la biblioteca que te transportará a mundos imaginarios y te hará vivir aventuras inolvidables a través de las páginas de sus libros.
-  
-  El nombre de nuestra librería está inspirado en Titivillus, un demonio de la mitología medieval que se decía que se encargaba de recopilar los errores que cometían los escribas al copiar los textos. En la época de los manuscritos, se creía que cada vez que un escriba cometía un error, Titivillus lo anotaba en su libro y lo llevaba ante el juicio final como evidencia del pecado del escriba. Sin embargo, en Titivillus queremos darle un giro positivo a esta historia y usar el nombre de este demonio para inspirarnos a buscar la perfección en la lectura, la escritura y la transmisión del conocimiento.
-  
-  En Titivillus encontrarás una amplia selección de obras de todos los géneros: desde clásicos de la literatura hasta las últimas novedades, pasando por ensayos, obras de no ficción y libros ilustrados para niños. Nuestro objetivo es ofrecerte una experiencia única y enriquecedora, en la que puedas descubrir nuevos mundos, aprender cosas nuevas y disfrutar de la lectura en todas sus formas.
-  
-  Además, en Titivillus nos enorgullece contar con un equipo de bibliotecarios expertos que estarán encantados de recomendarte libros, ayudarte a encontrar lo que buscas y compartir contigo su pasión por la literatura. También organizamos eventos y actividades literarias para todos los públicos, desde clubes de lectura hasta talleres y presentaciones de libros.
-  
-  En resumen, en Titivillus creemos que la lectura es una fuente inagotable de conocimiento, inspiración y diversión, y estamos comprometidos con fomentar el amor por los libros y la cultura en nuestra comunidad. ¡Te invitamos a que nos visites y descubras todo lo que tenemos para ofrecerte!
+export const aboutDescription = `Bienvenido a <span>Titivillus</span> BookStore, la biblioteca que te transportará a mundos imaginarios y te hará vivir aventuras inolvidables a través de las páginas de sus libros.<br>
+  <br>
+  El nombre de nuestra librería está inspirado en Titivillus, un demonio de la mitología medieval que se decía que se encargaba de recopilar los errores que cometían los escribas al copiar los textos. En la época de los manuscritos, se creía que cada vez que un escriba cometía un error, Titivillus lo anotaba en su libro y lo llevaba ante el juicio final como evidencia del pecado del escriba. Sin embargo, en Titivillus queremos darle un giro positivo a esta historia y usar el nombre de este demonio para inspirarnos a buscar la perfección en la lectura, la escritura y la transmisión del conocimiento. <br>
+  <br>
+  En Titivillus encontrarás una amplia selección de obras de todos los géneros: desde clásicos de la literatura hasta las últimas novedades, pasando por ensayos, obras de no ficción y libros ilustrados para niños. Nuestro objetivo es ofrecerte una experiencia única y enriquecedora, en la que puedas descubrir nuevos mundos, aprender cosas nuevas y disfrutar de la lectura en todas sus formas.<br>
+  <br>
+  Además, en Titivillus nos enorgullece contar con un equipo de bibliotecarios expertos que estarán encantados de recomendarte libros, ayudarte a encontrar lo que buscas y compartir contigo su pasión por la literatura. También organizamos eventos y actividades literarias para todos los públicos, desde clubes de lectura hasta talleres y presentaciones de libros.<br>
+  <br>
+  En resumen, en Titivillus creemos que la lectura es una fuente inagotable de conocimiento, inspiración y diversión, y estamos comprometidos con fomentar el amor por los libros y la cultura en nuestra comunidad. ¡Te invitamos a que nos visites y descubras todo lo que tenemos para ofrecerte!<br>
   `;
 
-export const invitationBookClub = `¡Bienvenidos a la Librería Titivillus, el lugar perfecto para los amantes de la lectura! Si estás buscando una comunidad de lectores apasionados que disfrutan de compartir sus pensamientos y opiniones sobre los libros, ¡nuestro club de lectura es perfecto para ti!
-  
-  Únete a nuestro club de lectura y descubre un mundo de posibilidades literarias. Cada mes, exploraremos diferentes géneros y autores, desde clásicos hasta las últimas novedades literarias. Además, tendrás la oportunidad de conocer a otros amantes de la lectura, hacer amigos y tener conversaciones fascinantes.
-  
-  Nuestro club de lectura es completamente gratuito y abierto a todos los niveles de lectura. ¡No importa si eres un ávido lector o simplemente estás buscando una forma de empezar a leer más, todos son bienvenidos! Además, como miembro del club de lectura, recibirás descuentos especiales en nuestros libros seleccionados.
-  
+export const invitationBookClub = `¡Bienvenidos a <span>Titivillus</span> BookStore, el lugar perfecto para los amantes de la lectura! Si estás buscando una comunidad de lectores apasionados que disfrutan de compartir sus pensamientos y opiniones sobre los libros, ¡nuestro club de lectura es perfecto para ti!<br>
+  <br>
+  Únete a nuestro club de lectura y descubre un mundo de posibilidades literarias. Cada mes, exploraremos diferentes géneros y autores, desde clásicos hasta las últimas novedades literarias. Además, tendrás la oportunidad de conocer a otros amantes de la lectura, hacer amigos y tener conversaciones fascinantes.<br>
+  <br>
+  Nuestro club de lectura es completamente gratuito y abierto a todos los niveles de lectura. ¡No importa si eres un ávido lector o simplemente estás buscando una forma de empezar a leer más, todos son bienvenidos! Además, como miembro del club de lectura, recibirás descuentos especiales en nuestros libros seleccionados.<br>
+  <br>
   ¿A qué esperas? Únete hoy mismo al club de lectura de la Librería Titivillus y comienza tu viaje literario. ¡Haz clic en el botón de abajo para registrarte ahora mismo!
   `;
