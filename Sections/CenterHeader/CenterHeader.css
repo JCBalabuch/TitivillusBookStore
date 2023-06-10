@@ -1,0 +1,22 @@
+.centerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .centerHeader > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ttv-color-light);
+    gap: 30px;
+  }
+  
+  .centerHeader > ul > li > a {
+    color: var(--ttv-color-light);
+  }
+  
+  .centerHeader > ul > li > a:hover {
+    color: var(--ttv-color-secondary);
+    text-decoration-line: underline;
+  }
