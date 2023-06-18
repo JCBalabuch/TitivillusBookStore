@@ -15,6 +15,7 @@ footer > a > img {
 
 footer > p {
     color: var(--ttv-color-light);
+    font-style: italic;
 }
 
 footer > img {

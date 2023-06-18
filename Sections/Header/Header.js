@@ -1,20 +1,22 @@
 import "./Header.css";
 
-import LeftHeader from "../LeftHeader/LeftHeader";
-import NavCenterHeader from "../CenterHeader/CenterHeader";
-import RightHeader from "../RightHeader/RightHeader";
+import leftHeader from "../LeftHeader/LeftHeader";
+import navCenterHeader from "../CenterHeader/CenterHeader";
 import { linksNav } from "../../Data/Data";
+import rightHeader from "../RightHeader/RightHeader";
 
 
-const templateH = () => {
-  return `${LeftHeader()}
-  ${NavCenterHeader(linksNav)}
-  ${RightHeader}`;
+
+const templateHeader = () =>{
+  return `
+  ${leftHeader()}
+  ${navCenterHeader(linksNav)}
+  ${rightHeader()}
+  `
 };
 
-
 const Header = () => {
-  document.querySelector("header").innerHTML = templateH();
+  document.querySelector("header").innerHTML += templateHeader();
 };
 
 export default Header;

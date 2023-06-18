@@ -1,17 +1,17 @@
 import "./CenterHeader.css";
 
-const NavCenterHeader = (links) => {
+const navCenterHeader = (links) => {
     return `
-    <nav>
+    <nav class="centerHeader">
         <ul>
-            ${links.map((links) => `
+            ${links.map((link) => `
                 <li>
-                    <a href=${link.link} id=${link.id}>${link.name}</a>
+                    <a href="${link.link} id="${link.id}">${link.name}</a>
                 </li>
             `).join("")}
         </ul>
     </nav>
-    `;
+    `
 };
 
-export default NavCenterHeader;
+export default navCenterHeader;

@@ -1,6 +1,6 @@
 import "./RightHeader.css";
 
-const RightHeader = () => {
+const rightHeader = () => {
   return `
   <div class = "rightHeader">
     <button id = "signIn">Sign in</button>
@@ -15,4 +15,4 @@ const RightHeader = () => {
   `;
 };
 
-export default RightHeader;
+export default rightHeader;
