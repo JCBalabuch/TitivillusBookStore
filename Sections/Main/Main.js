@@ -1,11 +1,16 @@
 import "./Main.css";
-import galleryBooks from "../GalleryCards/GalleryCards";
+
 import { dataBooks } from "../../Data/Data";
+import { filters } from "../Filters/Filters";
+import templateGalleryBooks from "../GalleryCards/GalleryCards";
 
 
 const templateMain = () => {
     return `
-    ${galleryBooks()}
+    <div id="mainTemplate">
+    ${filters()}
+    ${templateGalleryBooks()}
+    </div>
     `
 };
 

@@ -264,7 +264,7 @@ export const dataBooks = [
     title: "Crónica de una muerte anunciada",
     author: "Gabriel García Márquez",
     cover:
-      "https://www.penguinlibros.com/es/1511050-large_default/cronica-de-una-muerte-anunciada.jpg",
+      "https://www.unitheque.com/Intermediaire1/CouvertureC/R/9788497592437-cronica-muerte-anunciada_g.jpg",
     description:
       "Una novela que cuenta la historia de un asesinato en un pequeño pueblo colombiano, y cómo todos los habitantes conocían los planes del asesinato, pero nadie hizo nada para evitarlo.",
     editorial: "Debolsillo",
