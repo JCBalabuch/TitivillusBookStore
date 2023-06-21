@@ -43,16 +43,17 @@ const templateGalleryBooks = () => {
 
     ulGallery.append(li);
   }
+
   gallery.append(ulGallery);
-
-  console.log(gallery);
-
-  mainTemplate.append(gallery);
-//   document.body.append(gallery);
 };
 
-const galleryBooks = () => {
-    document.querySelector
-}
 
-export default templateGalleryBooks;
+const printGalleryBooks = () => {
+  document.querySelector("#mainTemplate").innerHTML += templateGalleryBooks();
+};
+
+export default printGalleryBooks;
+
+
+  // La línea de abajo, colocada al final de la función template, lo inseta en el body, pero necesito que lo inserte en el main
+  //   document.body.append(gallery);

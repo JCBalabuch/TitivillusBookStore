@@ -1,12 +1,13 @@
 import Hero from "../../Sections/Hero/Hero";
 import templateMain from "../../Sections/Main/Main";
-import Main from "../../Sections/Main/Main";
 import "./Home.css";
 
 const templateHome = () => {
   return `
-    ${Hero()}
-    ${templateMain()}
+    <div id="homeSection">
+      ${Hero()}
+      ${templateMain()}
+    </div>
     `;
 };
 
