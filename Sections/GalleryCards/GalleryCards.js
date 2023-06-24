@@ -1,7 +1,9 @@
 import "./GalleryCards.css";
 import { dataBooks } from "../../Data/Data";
 
-const templateGalleryBooks = () => {
+export const templateGalleryBooks = () => {
+  const galleryBooks = document.querySelector("#homeSection");
+
   const gallery = document.createElement("div");
   gallery.classList.add("gallery");
 
@@ -45,15 +47,49 @@ const templateGalleryBooks = () => {
   }
 
   gallery.append(ulGallery);
+
+  document.body.append(gallery)
+  // galleryBooks.append(gallery);
+
+  console.log(gallery);
 };
 
+// export const galleryBooks = () => {
+//   document.querySelector("#homeSection").innerHTML += templateGalleryBooks();
+// };
+// galleryBooks.append(gallery);
 
-const printGalleryBooks = () => {
-  document.querySelector("#mainTemplate").innerHTML += templateGalleryBooks();
-};
+// export default templateGalleryBooks;
 
-export default printGalleryBooks;
+// La línea de abajo, colocada al final de la función template, lo inseta en el body, pero necesito que lo inserte en el main
+// document.body.append(gallery);
 
+// export const templateGalleryBooks = () => {
+//   return `
+//   <div class="gallery">
+//     <ul class="ulGallery">
+//       ${booksGallery()}
+//     </ul>
+//   </div>
+//   `;
+// };
 
-  // La línea de abajo, colocada al final de la función template, lo inseta en el body, pero necesito que lo inserte en el main
-  //   document.body.append(gallery);
+// const booksGallery = () => {
+//   for (const book of dataBooks) {
+//     return `
+//     <li>
+//       <div class="bookCard">
+//         <div class="bookImg">
+//           <img src="${book.cover}" alt="${book.title}" cover/>
+//         </div>
+//         <h3>${book.title}</h3>
+//         <h4>${book.author}</h4>
+//         <p>${book.editorial}</p>
+//         <p class="price">${book.price}€</p>
+//       </div>
+//     </li>
+//     `;
+//   }
+// };
+
+// console.log(booksGallery);

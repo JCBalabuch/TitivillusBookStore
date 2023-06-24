@@ -14,7 +14,9 @@ Footer();
 
 // document.querySelector("#homeLink").addEventListener("click", (ev) => {
 //     Home();
+//     console.log(ev);
 // });
 
-// document.querySelector("#bookClubLink").onclick = BookClub;
-// document.querySelector("#aboutLink").onclick = About;
+
+// document.querySelector("#bookClubLink").onclick = BookClub();
+// document.querySelector("#aboutLink").onclick = About();

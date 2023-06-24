@@ -1,12 +1,15 @@
-import Hero from "../../Sections/Hero/Hero";
-import templateMain from "../../Sections/Main/Main";
 import "./Home.css";
+import Hero from "../../Sections/Hero/Hero";
+import { templateGalleryBooks } from "../../Sections/GalleryCards/GalleryCards";
+
 
 const templateHome = () => {
   return `
     <div id="homeSection">
       ${Hero()}
-      ${templateMain()}
+      <div id="mainTemplate"> 
+      ${templateGalleryBooks()}
+      </div>
     </div>
     `;
 };
