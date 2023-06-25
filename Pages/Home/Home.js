@@ -1,6 +1,7 @@
 import "./Home.css";
 import Hero from "../../Sections/Hero/Hero";
 import { templateGalleryBooks } from "../../Sections/GalleryCards/GalleryCards";
+import { printFilters } from "../../Sections/Filters/Filters";
 
 
 const templateHome = () => {
@@ -8,7 +9,6 @@ const templateHome = () => {
     <div id="homeSection">
       ${Hero()}
       <div id="mainTemplate"> 
-      ${templateGalleryBooks()}
       </div>
     </div>
     `;
@@ -16,6 +16,9 @@ const templateHome = () => {
 
 const Home = () => {
   document.querySelector("main").innerHTML += templateHome();
+  printFilters();
+  templateGalleryBooks();
 };
+
 
 export default Home;

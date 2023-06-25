@@ -6,21 +6,25 @@ export const printFilters = () => {
 
   const templateFilters = () => {
     return `
+    <div class="filters-section">
       <h3>Busca por:</h3>
-      <div class="searchByEditorial">
-          <h4>Editorial</h4>
-          <select id="searchByEditorial">
-              <option>-</option>
-          </select>
+      <div class="filters">
+        <div class="searchByEditorial">
+            <h4>Editorial</h4>
+            <select id="searchByEditorial">
+                <option>-</option>
+            </select>
+        </div>
+        <div class="searchByTitleOrAuthor">
+            <h4>Título o autor</h4>
+            <input type="text" placeholder="Título o Autor" id="searchByTitleOrAuthor">
+        </div>
+        <div class="searchByPrice">
+            <h4>Precio máximo</h4>
+            <input type="number" id="searchByPrice">
+        </div>
       </div>
-      <div class="searchByTitleOrAuthor">
-          <h4>Título o autor</h4>
-          <input type="text" placeholder="Título o Autor" id="searchByTitleOrAuthor">
-      </div>
-      <div class="searchByPrice">
-          <h4>Precio máximo</h4>
-          <input type="number" id="searchByPrice">
-      </div>
+    </div>
       `;
   };
 
@@ -41,5 +45,5 @@ const addOptionsSearchByEditorial = () => {
   });
 };
 
-printFilters();
+// printFilters();
 addOptionsSearchByEditorial();

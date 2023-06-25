@@ -2,7 +2,7 @@ import "./GalleryCards.css";
 import { dataBooks } from "../../Data/Data";
 
 export const templateGalleryBooks = () => {
-  const galleryBooks = document.querySelector("#homeSection");
+  const galleryBooks = document.querySelector("#mainTemplate");
 
   const gallery = document.createElement("div");
   gallery.classList.add("gallery");
@@ -20,7 +20,7 @@ export const templateGalleryBooks = () => {
     bookImg.classList.add("bookImg");
     const img = document.createElement("img");
     img.src = book.cover;
-    img.alt = book.title + "cover";
+    img.alt = book.title + " cover";
     bookImg.append(img);
     bookCard.append(bookImg);
 
@@ -49,7 +49,7 @@ export const templateGalleryBooks = () => {
   gallery.append(ulGallery);
 
   document.body.append(gallery)
-  // galleryBooks.append(gallery);
+  galleryBooks.append(gallery);
 
   console.log(gallery);
 };
