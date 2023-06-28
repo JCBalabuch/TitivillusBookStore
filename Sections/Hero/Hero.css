@@ -35,4 +35,10 @@
   font-weight: 900;
 }
 
+@media screen and (max-width: 800px) {
+  .hero {
+      display: flex;
+      flex-direction: column;
+  }
+}
 
