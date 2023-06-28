@@ -16,7 +16,8 @@ const templateHome = () => {
 
 const Home = () => {
   document.querySelector("main").innerHTML += templateHome();
-  printFilters();
+  const filters$$ = document.querySelector("#mainTemplate");
+  printFilters(filters$$);
   templateGalleryBooks();
 };
 

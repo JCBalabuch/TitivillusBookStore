@@ -1,10 +1,47 @@
 import { DATABOOKS } from "../../Data/Data";
 import "./Filters.css";
+export const printFilters = (filters$$) => {
 
-export const printFilters = () => {
-  const filters$$ = document.querySelector("#mainTemplate");
+  const editorialFilter = (filters$$) => {
+    const editorials = [];
 
-  const templateFilters = () => {
+    for (const book of DATABOOKS) {
+      if (!editorials.includes(book.editorial)) {
+        editorials.push(book.editorial);
+      }
+    }
+
+    const divEditorial$$ = document.createElement("div");
+    divEditorial$$.id = "searchByEditorial";
+
+    const tituloEditorial$$ = document.createElement("h4");
+    tituloEditorial$$.textContent = "Filtrar por Editoriales";
+    divEditorial$$.appendChild(tituloEditorial$$);
+
+    const editorial$$ = document.createElement("select");
+    editorial$$.id = "editorialSelect";
+    divEditorial$$.appendChild(editorial$$);
+
+    console.log(editorial$$);
+
+    for (const editorial of editorials) {
+      const edOptions$$ = document.createElement("option");
+      edOptions$$.text = editorial;
+
+      editorial$$.append(edOptions$$);
+    }
+    divEditorial$$.append(editorial$$);
+
+    editorial$$.addEventListener("change", (e) => {
+      const selectValue = e.value;
+      console.log(`el valor seleccionado es: ${selectValue}`)
+    });
+
+    filters$$.appendChild(divEditorial$$);
+  };
+
+
+  const templateFilters = (filters$$) => {
     // return `
     // <div class="filters-section">
     //   <h3>Busca por:</h3>
@@ -29,48 +66,9 @@ export const printFilters = () => {
     editorialFilter(filters$$)
   };
 
-  filters$$.innerHTML += templateFilters();
+  // filters$$.innerHTML += templateFilters();
+  templateFilters(filters$$)
 };
-
-const editorialFilter = (filters$$) => {
-  const editorials = [];
-
-  for (const book of DATABOOKS) {
-    if (!editorials.includes(book.editorial)) {
-      editorials.push(book.editorial);
-    }
-  }
-
-  const divEditorial$$ = document.createElement("div");
-  divEditorial$$.id = "searchByEditorial";
-
-  const tituloEditorial$$ = document.createElement("h4");
-  tituloEditorial$$.textContent = "Filtrar por Editoriales";
-  divEditorial$$.appendChild(tituloEditorial$$);
-
-  const editorial$$ = document.createElement("select");
-  editorial$$.id = "editorialSelect";
-  divEditorial$$.appendChild(editorial$$);
-
-  console.log(editorial$$);
-
-  for (const editorial of editorials) {
-    const edOptions$$ = document.createElement("option");
-    edOptions$$.text = editorial;
-
-    editorial$$.append(edOptions$$);
-  }
-  divEditorial$$.append(editorial$$);
-
-  editorial$$.addEventListener("change", (e) => {
-    const selectValue = e.value;
-    console.log(`el valor seleccionado es: ${selectValue}`)
-  });
-
-  // filters$$.appendChild(divEditorial$$);
-};
-
-editorialFilter();
 
 // const addOptionsSearchByEditorial = () => {
 //   const optionsSearchByEditorial = document.querySelector("#searchByEditorial");
